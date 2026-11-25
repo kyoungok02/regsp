@@ -64,7 +64,7 @@ flowchart TD
 ```
 
 One *stage* is one grasp-to-release cycle of one arm. `stack_blocks_two` and `handover_block` run two stages (up to two arms at once); `click_bell` and `place_container_plate` run one. Per-stage flow, memory gates and the retry budget (`ACL_RETRY = 2`, decoder call budget 300) are described in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
--->
+
 ## Key components
 
 | Component | Code | Role |
@@ -82,6 +82,9 @@ One *stage* is one grasp-to-release cycle of one arm. `stack_blocks_two` and `ha
 | RoboTwin adapter | `regsp/envs/robotwin.py`, `scripts/evaluate/robotwin_eval.py` | environment construction, seed/validity protocol, native success |
 
 **Interfaces.** End-effector commands are 16-D (`[xyz(3), quat wxyz(4), gripper(1)] x [left, right]`); the decoder emits 10-D encoded chunks (xyz, sin/cos of 3 Euler angles, gripper) that decode to 7-D per arm, concatenated in fixed [L, R] order for the 14-D bimanual chunk. **Gripper polarity: 1.0 = open, 0.0 = closed**; a decoder gripper output > 0.5 is a release proposal; the measured finger opening is normalised so that 1 = open. These conventions are covered by `tests/`.
+
+-->
+
 
 ## Installation
 
