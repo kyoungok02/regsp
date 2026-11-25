@@ -1,0 +1,29 @@
+{
+ "task": "click_bell",
+ "arm_selector": {
+  "w": [
+   -3.3091090386803614,
+   -27.03224470302106,
+   0.0,
+   0.0
+  ],
+  "b": 1.6439936416057372,
+  "n": 75,
+  "use_other_object_feature": false,
+  "val_acc_holdout": 1.0,
+  "val_acc_referent_only": 1.0,
+  "val_acc_with_other": 1.0,
+  "majority_baseline": 0.5466666666666666
+ },
+ "referent_height_world": {
+  "0": 0.7409999966621399
+ },
+ "max_cycles": 1,
+ "max_post_chunks": 3,
+ "defer_release": false,
+ "defer_fraction": null,
+ "cycles_per_episode_p50_p95": [
+  1.0,
+  1.0
+ ]
+}

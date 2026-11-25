@@ -1,0 +1,8 @@
+{
+ "_doc": "[V21-ACL] grasp-verification calibration of the MEASURED finger opening (gripper joint encoder, normalised: 1 = open). Source: expert demonstrations replayed on calibration seeds 5200000-5200002 (demo_clean; disjoint from every training/dev/final seed range) with scratch probe_grip.py; 'empty' = both grippers closed on nothing. Rule fixed before any ACL evaluation: verification is ENABLED only if (min hold reading - empty reading) >= 0.20; threshold = midpoint(empty, min hold). open_min = reading above which a gripper counts as opened.",
+ "rule_min_margin": 0.2,
+ "handover_block": {"empty": 0.1818, "hold_min": 0.7179, "hold_max": 0.7211, "thr": 0.45, "open_min": 0.85, "enabled": true},
+ "stack_blocks_two": {"empty": 0.1818, "hold_min": 0.628, "hold_max": 0.632, "thr": 0.405, "open_min": 0.85, "enabled": true},
+ "place_container_plate": {"empty": 0.1818, "hold_min": 0.2352, "hold_max": 0.2401, "thr": null, "open_min": 0.85, "enabled": false, "why_disabled": "margin 0.053 < 0.20 (thin-walled container: holding and empty readings are too close for a reliable test)"},
+ "click_bell": {"empty": 0.1818, "hold_min": null, "hold_max": null, "thr": null, "open_min": 0.85, "enabled": false, "why_disabled": "no object is held (the bell is pressed with a closed gripper; reading equals the empty reference)"}
+}

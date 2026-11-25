@@ -1,0 +1,9 @@
+task,config,n,pic_success,pic_rate_%,pic_wilson95,prev_n,prev_success,prev_rate_%,seeds_identical,both_success,only_pic,only_prev,pic_infra_failures,prev_infra_failures,pic_mean_calls,pic_mean_wall_s,model_changed_vs_prev
+click_bell,clean,20,20,100.0,"(83.9, 100.0)",20,20,100.0,True,20,0,0,0,0,10.4,2.2,False
+click_bell,rand,20,14,70.0,"(48.1, 85.5)",20,16,80.0,True,14,0,2,0,0,14.8,4.1,False
+place_container_plate,clean,20,16,80.0,"(58.4, 91.9)",20,14,70.0,True,11,5,3,0,0,16.2,3.6,False
+place_container_plate,rand,20,10,50.0,"(29.9, 70.1)",20,7,35.0,True,6,4,1,0,0,18.6,4.8,False
+stack_blocks_two,clean,20,16,80.0,"(58.4, 91.9)",20,19,95.0,False,15,1,4,0,0,49.0,9.5,True
+stack_blocks_two,rand,20,13,65.0,"(43.3, 81.9)",20,12,60.0,True,9,4,3,0,0,55.0,12.5,True
+handover_block,clean,20,14,70.0,"(48.1, 85.5)",20,12,60.0,False,9,5,3,0,0,36.4,8.3,False
+handover_block,rand,20,5,25.0,"(11.2, 46.9)",20,8,40.0,False,3,2,5,0,0,47.0,13.0,False

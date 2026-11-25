@@ -1,0 +1,9 @@
+task,config,n,success,rate_pct,wilson95_lo,wilson95_hi,skipped_seeds,unresolved_infra
+click_bell,clean,20,20,100.0,83.9,100.0,0,0
+handover_block,clean,20,14,70.0,48.1,85.5,3,0
+place_container_plate,clean,20,17,85.0,64.0,94.8,6,0
+stack_blocks_two,clean,20,17,85.0,64.0,94.8,0,0
+click_bell,rand,20,19,95.0,76.4,99.1,2,0
+handover_block,rand,20,6,30.0,14.5,51.9,4,0
+place_container_plate,rand,20,8,40.0,21.9,61.3,10,0
+stack_blocks_two,rand,20,15,75.0,53.1,88.8,7,0

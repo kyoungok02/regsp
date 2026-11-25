@@ -1,0 +1,40 @@
+group,task,config,instruction_condition,n,native_success,first_grasp_red,first_grasp_green,goal_green_on_red,goal_red_on_green,dir,note
+"dev interventions, previous frozen model",click_bell,rand,orig,20,15,,,,,pic_lang_orig/rand/click_bell,dev block B (7200100+/7500100+)
+"dev interventions, previous frozen model",place_container_plate,rand,orig,20,14,,,,,pic_orig/rand/place_container_plate,dev block B (7200100+/7500100+)
+"dev interventions, previous frozen model",handover_block,rand,orig,12,6,,,,,dev_c1b/rand/handover_block,dev block B (7200100+/7500100+) first 12
+"dev interventions, previous frozen model",click_bell,rand,blank,20,11,,,,,pic_lang_blank/rand/click_bell,dev block B (7200100+/7500100+)
+"dev interventions, previous frozen model",place_container_plate,rand,blank,20,11,,,,,pic_lang_blank/rand/place_container_plate,dev block B (7200100+/7500100+)
+"dev interventions, previous frozen model",handover_block,rand,blank,12,5,,,,,pic_lang_blank/rand/handover_block,dev block B (7200100+/7500100+) first 12
+"dev interventions, previous frozen model",click_bell,rand,shuffle,20,16,,,,,pic_lang_shuffle/rand/click_bell,dev block B (7200100+/7500100+)
+"dev interventions, previous frozen model",place_container_plate,rand,shuffle,20,12,,,,,pic_lang_shuffle/rand/place_container_plate,dev block B (7200100+/7500100+)
+"dev interventions, previous frozen model",handover_block,rand,shuffle,12,3,,,,,pic_lang_shuffle/rand/handover_block,dev block B (7200100+/7500100+) first 12
+"dev interventions, previous frozen model",click_bell,rand,wrong,20,13,,,,,pic_lang_wrong/rand/click_bell,dev block B (7200100+/7500100+)
+"dev interventions, previous frozen model",place_container_plate,rand,wrong,20,10,,,,,pic_lang_wrong/rand/place_container_plate,dev block B (7200100+/7500100+)
+"dev interventions, previous frozen model",handover_block,rand,wrong,12,2,,,,,pic_lang_wrong/rand/handover_block,dev block B (7200100+/7500100+) first 12
+"dev interventions, previous frozen model",stack_blocks_two,rand,orig,12,8,11,0,,,dev_c1b/rand/stack_blocks_two,dev block B (7200100+/7500100+) first 12; frozen cycle scorer
+"dev interventions, previous frozen model",stack_blocks_two,rand,blank,12,5,7,5,,,pic_lang_blank/rand/stack_blocks_two,dev block B (7200100+/7500100+) first 12; frozen cycle scorer
+"dev interventions, previous frozen model",stack_blocks_two,rand,counterfactual (roles exchanged),12,2,2,10,,,pic_lang_cf/rand/stack_blocks_two,dev block B (7200100+/7500100+) first 12; frozen cycle scorer
+"dev, subgoal scorer s2 + frozen progress head",stack_blocks_two,rand,orig,20,15,19,0,15,0,pic_s2/rand/stack_blocks_two,dev block B (7200100+/7500100+)
+"dev, subgoal scorer s2 + frozen progress head",stack_blocks_two,rand,counterfactual (roles exchanged),20,0,0,20,0,7,pic_s2_cf/rand/stack_blocks_two,dev block B (7200100+/7500100+)
+"dev, PIC (s2 + instruction-conditioned progress head p2)",stack_blocks_two,rand,orig,20,13,19,0,13,0,pic_s2p2/rand/stack_blocks_two,dev block B (7200100+/7500100+)
+"dev, PIC (s2 + instruction-conditioned progress head p2)",stack_blocks_two,rand,counterfactual (roles exchanged),20,0,1,19,0,9,pic_s2p2_cf/rand/stack_blocks_two,dev block B (7200100+/7500100+)
+"dev, PIC + grasp verification D1",stack_blocks_two,rand,orig,20,15,19,0,15,0,pic_s2p2d1/rand/stack_blocks_two,dev block B (7200100+/7500100+)
+"dev, PIC + grasp verification D1",stack_blocks_two,rand,counterfactual (roles exchanged),20,0,0,20,0,9,pic_s2p2d1_cf/rand/stack_blocks_two,dev block B (7200100+/7500100+)
+"training-domain rollouts (round 2), s2 + frozen progress head",stack_blocks_two,rand,orig,40,28,36,1,28,1,sg_r2_orig/rand/stack_blocks_two,seeds 53008xx/53508xx
+"training-domain rollouts (round 2), s2 + frozen progress head",stack_blocks_two,rand,counterfactual (roles exchanged),40,0,1,39,0,19,sg_r2_cf/rand/stack_blocks_two,seeds 53008xx/53508xx
+"FINAL3 fresh seeds, PIC",stack_blocks_two,rand,orig,20,13,20,0,13,0,final3_pic/rand/stack_blocks_two,8100000+/8600000+
+"FINAL3 fresh seeds, PIC",stack_blocks_two,rand,counterfactual (roles exchanged),20,1,2,18,1,6,final3_pic_cf/rand/stack_blocks_two,8100000+/8600000+
+"FINAL3 fresh seeds, previous frozen model",stack_blocks_two,rand,orig,20,12,20,0,,,final3_prev/rand/stack_blocks_two,8100000+/8600000+ (frozen runner; final block poses not logged by that runner)
+"FINAL3 fresh seeds, previous frozen model",stack_blocks_two,rand,counterfactual (roles exchanged),20,3,4,16,3,0,final3_prev_cf/rand/stack_blocks_two,8100000+/8600000+ (frozen components run through pic_rt_policy.py)
+"dev, subgoal scorer s2 + frozen progress head",stack_blocks_two,clean,orig,20,18,20,0,18,0,pic_s2/clean/stack_blocks_two,dev block B (7200100+/7500100+)
+"dev, subgoal scorer s2 + frozen progress head",stack_blocks_two,clean,counterfactual (roles exchanged),20,0,0,20,0,12,pic_s2_cf/clean/stack_blocks_two,dev block B (7200100+/7500100+)
+"dev, PIC (s2 + instruction-conditioned progress head p2)",stack_blocks_two,clean,orig,20,19,20,0,19,0,pic_s2p2/clean/stack_blocks_two,dev block B (7200100+/7500100+)
+"dev, PIC (s2 + instruction-conditioned progress head p2)",stack_blocks_two,clean,counterfactual (roles exchanged),20,0,0,20,0,15,pic_s2p2_cf/clean/stack_blocks_two,dev block B (7200100+/7500100+)
+"dev, PIC + grasp verification D1",stack_blocks_two,clean,orig,20,16,20,0,16,0,pic_s2p2d1/clean/stack_blocks_two,dev block B (7200100+/7500100+)
+"dev, PIC + grasp verification D1",stack_blocks_two,clean,counterfactual (roles exchanged),20,0,0,20,0,15,pic_s2p2d1_cf/clean/stack_blocks_two,dev block B (7200100+/7500100+)
+"training-domain rollouts (round 2), s2 + frozen progress head",stack_blocks_two,clean,orig,40,38,40,0,38,0,sg_r2_orig/clean/stack_blocks_two,seeds 53008xx/53508xx
+"training-domain rollouts (round 2), s2 + frozen progress head",stack_blocks_two,clean,counterfactual (roles exchanged),40,1,0,40,1,26,sg_r2_cf/clean/stack_blocks_two,seeds 53008xx/53508xx
+"FINAL3 fresh seeds, PIC",stack_blocks_two,clean,orig,20,16,19,0,16,0,final3_pic/clean/stack_blocks_two,8100000+/8600000+
+"FINAL3 fresh seeds, PIC",stack_blocks_two,clean,counterfactual (roles exchanged),20,0,0,19,0,13,final3_pic_cf/clean/stack_blocks_two,8100000+/8600000+
+"FINAL3 fresh seeds, previous frozen model",stack_blocks_two,clean,orig,20,19,20,0,,,final3_prev/clean/stack_blocks_two,8100000+/8600000+ (frozen runner; final block poses not logged by that runner)
+"FINAL3 fresh seeds, previous frozen model",stack_blocks_two,clean,counterfactual (roles exchanged),20,0,0,19,0,2,final3_prev_cf/clean/stack_blocks_two,8100000+/8600000+ (frozen components run through pic_rt_policy.py)

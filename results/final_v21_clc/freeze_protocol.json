@@ -1,0 +1,139 @@
+{
+ "frozen_utc": "2026-11-17T05:22:57Z",
+ "experiment": "V21-CLC: closed-loop grounding-to-action error correction inside the existing SafeDiff-VLA V21 pipeline (final four-task refinement; extension of freeze3 V21-PIC; Randomized-domain adaptation). No new network, no retraining: every checkpoint equals freeze3 (verified by hash at freeze time).",
+ "runner": "scripts/run_final4.sh clc -> freeze4/selected_env.sh -> scripts/run_clc.sh -> scripts/clc_rt_policy.py (versioned copy of the frozen pic_rt_policy.py; all CLC_* options default off)",
+ "selected_config": {
+  "handover_block": {
+   "CLC_APPROACH": 2,
+   "what": "pre-grasp chunk executed through an aligned lead-in point, the standoff point and a straight final approach along the gripper finger axis (samples 9,19,29,34,39,44,49 instead of every 10th); commanded-vs-measured check at the standoff (repeat once if > 1 cm)"
+  },
+  "place_container_plate": {
+   "CLC_APPROACH": 2,
+   "CLC_REVERIFY": 1,
+   "CLC_FB": 1,
+   "ACL_NEWG": 1,
+   "ACL_FUSE": "0 (not read by the executor)",
+   "what": "same approach; grounding cross-checks (confidence gate, low-threshold re-proposal) of the existing executor enabled for this single-arm task; grounded fallback (coarse head estimate + mean training-domain grasp offset clc_stats.json) when two-view grounding fails; after release the referent is re-grounded and a bounded retry (ACL_RETRY) is triggered when it is confidently seen > 10 cm from the gripper"
+  },
+  "stack_blocks_two": "unchanged freeze3 configuration (regression control; stage-conditioned subgoal scorer subgoal_s2 + acl_p2 preserved)",
+  "click_bell": "unchanged freeze3 configuration (regression control)",
+  "common": {
+   "ACL_K": 5,
+   "ACL_RETRY": 2,
+   "ACL_PROG": 1,
+   "ACL_TRACE": "off (no privileged logging in the final)"
+  }
+ },
+ "dev_evidence_pooled_blocks_D_E_F(n=60 per cell, success)": {
+  "handover_block": {
+   "rand": {
+    "freeze3": 19,
+    "selected": 32,
+    "per_block_freeze3": [
+     4,
+     7,
+     8
+    ],
+    "per_block_selected": [
+     11,
+     12,
+     9
+    ]
+   },
+   "clean": {
+    "freeze3": 37,
+    "selected": 53,
+    "per_block_freeze3": [
+     12,
+     14,
+     11
+    ],
+    "per_block_selected": [
+     19,
+     18,
+     16
+    ]
+   }
+  },
+  "place_container_plate": {
+   "rand": {
+    "freeze3": 23,
+    "selected": 38,
+    "per_block_freeze3": [
+     10,
+     7,
+     6
+    ],
+    "per_block_selected": [
+     13,
+     12,
+     13
+    ]
+   },
+   "clean": {
+    "freeze3": 46,
+    "selected": 45,
+    "per_block_freeze3": [
+     16,
+     14,
+     16
+    ],
+    "per_block_selected": [
+     15,
+     16,
+     14
+    ]
+   }
+  },
+  "stack_blocks_two": {
+   "rand": {
+    "freeze3": 37,
+    "CLC_APPROACH=2": 45,
+    "per_block_freeze3": [
+     12,
+     15,
+     10
+    ],
+    "per_block_ap2": [
+     13,
+     13,
+     19
+    ]
+   },
+   "clean": {
+    "freeze3": 55,
+    "CLC_APPROACH=2": 55
+   }
+  },
+  "click_bell(block D only, n=20)": {
+   "rand": {
+    "freeze3": 17,
+    "CLC_APPROACH=2": 17
+   },
+   "clean": {
+    "freeze3": 19,
+    "CLC_APPROACH=2": 19
+   }
+  }
+ },
+ "not_adopted_on_dev_evidence": [
+  "CLC_NEAR close-range lateral correction for handover (with return pose: 31/60 Rand, 50/60 Clean vs 32/60, 53/60 without; first version without return pose 6/20, 13/20)",
+  "CLC_ASSOC + CLC_RECENTER prior-consistent wrist association / re-centred views (no grounding-accuracy gain; Clean 16/20 vs 19/20)",
+  "CLC_APPROACH=1 (standoff sample only: 9/20, 15/20 vs 11/20, 19/20 for the aligned lead-in)",
+  "place_container_plate without grounding cross-checks: pcp2 29/60 Rand; verify-only pcpV 32/60 Rand, 50/60 Clean (Clean +4 over freeze3 is within noise; Randomized is the priority, pcp3 selected)",
+  "CLC_APPROACH=2 for stack_blocks_two: Randomized gain comes from one block only (+1, -2, +9); the frozen successful configuration is kept as instructed",
+  "CLC_RECVXY (untested: receive stage succeeded 9/9 once the approach was fixed)"
+ ],
+ "seeds": {
+  "final4_clean": "8200000+",
+  "final4_randomized": "8700000+",
+  "n_per_task_config": 20,
+  "never_used_before": true,
+  "previous_frozen_model(freeze3)_matched_on_same_seeds": true
+ },
+ "selection": "development seeds only (blocks D 7200300+/7500300+, E 7200400+/7500400+, F 7200500+/7500500+); offset statistics clc_stats.json from training-domain rollouts (seeds < 7000000, incl. 5300900+/5350900+)",
+ "privileged_information": "simulator object states are logged only with ACL_TRACE=1 for offline diagnostics; never a policy input; trace is off in the final",
+ "n_files_hashed": 73,
+ "freeze3_files_bit_identical": true,
+ "no_selection_on_final_seeds": true
+}

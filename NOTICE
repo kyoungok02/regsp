@@ -1,0 +1,24 @@
+ReGSP
+Copyright 2026 the ReGSP authors (see README: Citation / Acknowledgements)
+
+This project is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+ReGSP is developed from the grounded-final SafeDiff-VLA V21 methodology and implementation, itself built on LeRobot.
+It contains source files that were written inside a fork of Hugging Face LeRobot (Apache License 2.0,
+Copyright 2024 The Hugging Face team. All rights reserved.). Those files are vendored here unchanged except for
+import-path adjustments:
+
+  regsp/backbone/                 SafeDiff-VLA policy package (configuration/modeling, temporal decoder, grounded-grasp heads,
+                                  StagePlan-v2 head and chunk builder, rotation encoding, domain adapter) and
+  regsp/backbone/action_semantics/ action-contract helpers,
+  derived from the `lerobot.policies.safediff_vla` and `lerobot.action_semantics` modules of the research fork of
+  https://github.com/huggingface/lerobot.
+
+The vendored code imports, and requires at run time, the unmodified upstream packages:
+  * LeRobot (https://github.com/huggingface/lerobot), Apache-2.0, pinned to 0.7.0
+  * SmolVLA / SmolVLM2-500M-Video-Instruct backbone weights fetched from the Hugging Face Hub, Apache-2.0
+  * RoboTwin (https://github.com/RoboTwin-Platform/RoboTwin), MIT License, Copyright (c) 2025 Tianxing Chen. Not copied; used as the
+    simulator. ReGSP only re-implements the thin task/environment construction that RoboTwin's own `script/eval_policy.py` performs
+    (regsp/envs/robotwin.py) and reads the aloha-agilex embodiment URDF for forward kinematics (regsp/execution/kinematics.py).
+  * RoboTwin-LeRobot-v3.0 demonstration dataset (https://huggingface.co/datasets/hxma/RoboTwin-LeRobot-v3.0), tagged Apache-2.0 on the Hub.
+Model weights are not part of this repository.

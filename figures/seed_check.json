@@ -1,0 +1,18 @@
+{
+ "seed_sets_identical": {
+  "cf_clean": true,
+  "cf_rand": true,
+  "clean": false,
+  "rand": true
+ },
+ "n_files": {
+  "new_cf_clean": 20,
+  "prev_cf_clean": 20,
+  "new_cf_rand": 20,
+  "prev_cf_rand": 20,
+  "new_clean": 20,
+  "prev_clean": 20,
+  "new_rand": 20,
+  "prev_rand": 20
+ }
+}

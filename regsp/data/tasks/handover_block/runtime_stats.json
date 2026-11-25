@@ -1,0 +1,30 @@
+{
+ "task": "handover_block",
+ "arm_selector": {
+  "w": [
+   0.008104238372652228,
+   0.012181136284871122,
+   12.870128240176905,
+   0.0
+  ],
+  "b": -6.460920100999229,
+  "n": 150,
+  "use_other_object_feature": false,
+  "val_acc_holdout": 1.0,
+  "val_acc_referent_only": 1.0,
+  "val_acc_with_other": 1.0,
+  "majority_baseline": 0.5
+ },
+ "referent_height_world": {
+  "0": 0.8400005102157593,
+  "1": 0.8400005102157593
+ },
+ "max_cycles": 2,
+ "max_post_chunks": 5,
+ "defer_release": true,
+ "defer_fraction": 1.0,
+ "cycles_per_episode_p50_p95": [
+  2.0,
+  2.0
+ ]
+}

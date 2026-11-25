@@ -1,0 +1,11 @@
+task,n_valid,success,rate,wilson95_lo,wilson95_hi,infra_failures,cycles_grounded,cycles_coarse_fallback,cycles_v2_fallback,cycles_no_proposals
+handover_block,10,0,0.0,-0.0,0.278,0,17,0,3,0
+stack_blocks_two,10,0,0.0,-0.0,0.278,0,11,9,0,0
+place_dual_shoes,10,0,0.0,-0.0,0.278,0,3,0,17,0
+place_object_basket,10,0,0.0,-0.0,0.278,0,2,0,18,0
+place_bread_basket,10,1,0.1,0.018,0.404,0,5,0,15,0
+beat_block_hammer,10,1,0.1,0.018,0.404,0,3,0,7,0
+click_bell,10,1,0.1,0.018,0.404,0,4,0,4,2
+place_container_plate,10,0,0.0,-0.0,0.278,0,5,0,5,0
+open_laptop,10,1,0.1,0.018,0.404,0,8,0,1,1
+shake_bottle,10,2,0.2,0.057,0.51,0,2,0,3,5

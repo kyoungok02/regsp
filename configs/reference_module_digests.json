@@ -1,0 +1,780 @@
+{
+ "click_bell": {
+  "v2": [
+   "StagePlanV2Head",
+   "db27b273c2f160e2",
+   2936336
+  ],
+  "sc": [
+   "Scorer",
+   "5a56329e7ffd5df0",
+   421504
+  ],
+  "ah": [
+   "AnchorHead",
+   "8b8308c09be262dc",
+   290691
+  ],
+  "D": [
+   "TemporalActionDecoder",
+   "b451b5892977b044",
+   14429194
+  ],
+  "Q": [
+   "TargetQueryExtractor",
+   "5e976a2d031e149a",
+   3691200
+  ],
+  "Vg": [
+   "VisualGroundingCrossAttention",
+   "f95d6603beaa298c",
+   3690240
+  ],
+  "TPH": [
+   "TargetPointHead",
+   "e1334489dee28446",
+   312579
+  ],
+  "head_head_camera": [
+   "Head",
+   "44380f7dc1111d33",
+   0
+  ],
+  "head_left_camera": [
+   "Head",
+   "a849cef5d8c7a74a",
+   0
+  ],
+  "head_right_camera": [
+   "Head",
+   "5ef5ee3e8500c957",
+   0
+  ],
+  "backbone": [
+   "pol",
+   "d17945e6ceec87f0",
+   0
+  ],
+  "pm": [
+   "arr",
+   "adc24258d670e59e",
+   0
+  ],
+  "ps": [
+   "arr",
+   "f07b960bb182d6f6",
+   0
+  ],
+  "dm": [
+   "arr",
+   "5d268451c06d343c",
+   0
+  ],
+  "dsd": [
+   "arr",
+   "0d5d64e37c121881",
+   0
+  ],
+  "anchor_dec": [
+   "anchor",
+   "2d04c66c5ac8b227True",
+   0
+  ],
+  "stats": [
+   "json",
+   "7a4b80ffafde8761",
+   0
+  ],
+  "cfg_K": [
+   "val",
+   "5",
+   0
+  ],
+  "cfg_max_retry": [
+   "val",
+   "2",
+   0
+  ],
+  "cfg_use_prog": [
+   "val",
+   "True",
+   0
+  ],
+  "cfg_maxcalls": [
+   "val",
+   "300",
+   0
+  ],
+  "cfg_clc_approach": [
+   "val",
+   "False",
+   0
+  ],
+  "cfg_clc_fb": [
+   "val",
+   "False",
+   0
+  ],
+  "cfg_clc_reverify": [
+   "val",
+   "False",
+   0
+  ],
+  "cfg_newg": [
+   "val",
+   "False",
+   0
+  ],
+  "cfg_anch_max": [
+   "val",
+   "0.0",
+   0
+  ],
+  "cfg_ref_tol": [
+   "val",
+   "0.1",
+   0
+  ],
+  "cfg_tau": [
+   "val",
+   "0.8",
+   0
+  ],
+  "cfg_open_min": [
+   "val",
+   "0.85",
+   0
+  ],
+  "cfg_nview": [
+   "val",
+   "3",
+   0
+  ],
+  "cfg_maxcyc": [
+   "val",
+   "1",
+   0
+  ],
+  "cfg_post_chunks": [
+   "val",
+   "3",
+   0
+  ],
+  "cfg_defer": [
+   "val",
+   "False",
+   0
+  ],
+  "opt": [
+   "val",
+   "{\"carrychk\": true, \"conf\": true, \"fuse\": true, \"lowthr\": true, \"memgate\": true, \"pivot\": true, \"receive\": true, \"relgate\": true, \"retreat\": true, \"term\": true, \"verify\": true}",
+   0
+  ],
+  "cal": [
+   "val",
+   "null",
+   0
+  ],
+  "clc_stats": [
+   "val",
+   "{}",
+   0
+  ]
+ },
+ "place_container_plate": {
+  "v2": [
+   "StagePlanV2Head",
+   "f29ca7217fac992c",
+   2936336
+  ],
+  "sc": [
+   "Scorer",
+   "136be5edd620ac57",
+   421504
+  ],
+  "ah": [
+   "AnchorHead",
+   "15a71b897b4e9347",
+   290691
+  ],
+  "D": [
+   "TemporalActionDecoder",
+   "2dbde10ba7b09aaa",
+   14429194
+  ],
+  "Q": [
+   "TargetQueryExtractor",
+   "2cd7d53f6c323b59",
+   3691200
+  ],
+  "Vg": [
+   "VisualGroundingCrossAttention",
+   "4c162aea6921ee4b",
+   3690240
+  ],
+  "TPH": [
+   "TargetPointHead",
+   "44f140d38072fb18",
+   312579
+  ],
+  "head_head_camera": [
+   "Head",
+   "72b11f07e3cf1f14",
+   0
+  ],
+  "head_left_camera": [
+   "Head",
+   "18454324382337ce",
+   0
+  ],
+  "head_right_camera": [
+   "Head",
+   "697b6228dab5fbc8",
+   0
+  ],
+  "backbone": [
+   "pol",
+   "b18c7535f816a1e6",
+   0
+  ],
+  "pm": [
+   "arr",
+   "de30db304b28d4e9",
+   0
+  ],
+  "ps": [
+   "arr",
+   "b63cc7cdae4c8991",
+   0
+  ],
+  "dm": [
+   "arr",
+   "8c1b17d784a0f2c7",
+   0
+  ],
+  "dsd": [
+   "arr",
+   "ff90a714f08169ee",
+   0
+  ],
+  "anchor_dec": [
+   "anchor",
+   "371b449d55a83a75True",
+   0
+  ],
+  "stats": [
+   "json",
+   "6560e92cbfa667a7",
+   0
+  ],
+  "cfg_K": [
+   "val",
+   "5",
+   0
+  ],
+  "cfg_max_retry": [
+   "val",
+   "2",
+   0
+  ],
+  "cfg_use_prog": [
+   "val",
+   "True",
+   0
+  ],
+  "cfg_maxcalls": [
+   "val",
+   "300",
+   0
+  ],
+  "cfg_clc_approach": [
+   "val",
+   "True",
+   0
+  ],
+  "cfg_clc_fb": [
+   "val",
+   "True",
+   0
+  ],
+  "cfg_clc_reverify": [
+   "val",
+   "True",
+   0
+  ],
+  "cfg_newg": [
+   "val",
+   "True",
+   0
+  ],
+  "cfg_anch_max": [
+   "val",
+   "0.0",
+   0
+  ],
+  "cfg_ref_tol": [
+   "val",
+   "0.1",
+   0
+  ],
+  "cfg_tau": [
+   "val",
+   "0.8",
+   0
+  ],
+  "cfg_open_min": [
+   "val",
+   "0.85",
+   0
+  ],
+  "cfg_nview": [
+   "val",
+   "3",
+   0
+  ],
+  "cfg_maxcyc": [
+   "val",
+   "1",
+   0
+  ],
+  "cfg_post_chunks": [
+   "val",
+   "4",
+   0
+  ],
+  "cfg_defer": [
+   "val",
+   "False",
+   0
+  ],
+  "opt": [
+   "val",
+   "{\"carrychk\": true, \"conf\": true, \"fuse\": false, \"lowthr\": true, \"memgate\": true, \"pivot\": true, \"receive\": true, \"relgate\": true, \"retreat\": true, \"term\": true, \"verify\": true}",
+   0
+  ],
+  "cal": [
+   "val",
+   "null",
+   0
+  ],
+  "clc_stats": [
+   "val",
+   "{\"definition\": \"median of (two-view grounded grasp point - head-ray x height-prior estimate of the referent), robot frame, metres\", \"grasp_minus_coarse\": {\"L\": [0.0027, 0.048, 0.0632], \"R\": [-0.0013, -0.0493, 0.0684]}, \"n_seeds\": {\"L\": 48, \"R\": 37}, \"seed_range\": \"training-domain rollouts < 7000000 (5300000+/5350000+ blocks)\"}",
+   0
+  ]
+ },
+ "stack_blocks_two": {
+  "v2": [
+   "StagePlanV2Head",
+   "aec89716d0fef363",
+   2936336
+  ],
+  "sc": [
+   "Scorer",
+   "2385ff1390f42a03",
+   421504
+  ],
+  "csc": [
+   "SubgoalScorer",
+   "cbed7540ec407fb4",
+   422016
+  ],
+  "ah": [
+   "AnchorHead",
+   "dc41146ca3523cec",
+   290691
+  ],
+  "D": [
+   "TemporalActionDecoder",
+   "a53781ec2536e107",
+   14429194
+  ],
+  "Q": [
+   "TargetQueryExtractor",
+   "ef6a7dba8cf48813",
+   3691200
+  ],
+  "Vg": [
+   "VisualGroundingCrossAttention",
+   "7a3a0e7f46135a05",
+   3690240
+  ],
+  "TPH": [
+   "TargetPointHead",
+   "45b16ca89bdcf513",
+   312579
+  ],
+  "bimdec": [
+   "BimDecoder",
+   "750feb2eb7da617c",
+   14964234
+  ],
+  "adec": [
+   "AdaptiveDecoder",
+   "61e74b5ff856da7d",
+   15248916
+  ],
+  "PH": [
+   "PicProgressHead",
+   "4b87ae8e21e09ffa",
+   1954576
+  ],
+  "head_head_camera": [
+   "Head",
+   "69a446da2fec5b54",
+   0
+  ],
+  "head_left_camera": [
+   "Head",
+   "e5aed62a0e27e943",
+   0
+  ],
+  "head_right_camera": [
+   "Head",
+   "918ae954760b9787",
+   0
+  ],
+  "backbone": [
+   "pol",
+   "a5dbaec6d1631bc1",
+   0
+  ],
+  "pm": [
+   "arr",
+   "c133c79243d358d0",
+   0
+  ],
+  "ps": [
+   "arr",
+   "d3fabf7aff4a2b7d",
+   0
+  ],
+  "dm": [
+   "arr",
+   "bd8dcbdc9111f932",
+   0
+  ],
+  "dsd": [
+   "arr",
+   "850a9dae75e0e884",
+   0
+  ],
+  "anchor_dec": [
+   "anchor",
+   "4eb69b3936a48d46False",
+   0
+  ],
+  "stats": [
+   "json",
+   "35797cb28c7772f7",
+   0
+  ],
+  "bst": [
+   "json",
+   "7880f7dba6ed598f",
+   0
+  ],
+  "cfg_K": [
+   "val",
+   "5",
+   0
+  ],
+  "cfg_max_retry": [
+   "val",
+   "2",
+   0
+  ],
+  "cfg_use_prog": [
+   "val",
+   "True",
+   0
+  ],
+  "cfg_maxcalls": [
+   "val",
+   "300",
+   0
+  ],
+  "cfg_clc_approach": [
+   "val",
+   "False",
+   0
+  ],
+  "cfg_clc_fb": [
+   "val",
+   "False",
+   0
+  ],
+  "cfg_clc_reverify": [
+   "val",
+   "False",
+   0
+  ],
+  "cfg_newg": [
+   "val",
+   "True",
+   0
+  ],
+  "cfg_anch_max": [
+   "val",
+   "0.0",
+   0
+  ],
+  "cfg_ref_tol": [
+   "val",
+   "0.1",
+   0
+  ],
+  "cfg_tau": [
+   "val",
+   "0.8",
+   0
+  ],
+  "cfg_open_min": [
+   "val",
+   "0.85",
+   0
+  ],
+  "cfg_nview": [
+   "val",
+   "6",
+   0
+  ],
+  "cfg_maxcyc": [
+   "val",
+   "2",
+   0
+  ],
+  "cfg_post_chunks": [
+   "val",
+   "4",
+   0
+  ],
+  "cfg_defer": [
+   "val",
+   "False",
+   0
+  ],
+  "opt": [
+   "val",
+   "{\"carrychk\": true, \"conf\": true, \"fuse\": true, \"lowthr\": true, \"memgate\": true, \"pivot\": true, \"receive\": true, \"relgate\": true, \"retreat\": true, \"term\": true, \"verify\": true}",
+   0
+  ],
+  "cal": [
+   "val",
+   "{\"empty\": 0.1818, \"enabled\": true, \"hold_max\": 0.632, \"hold_min\": 0.628, \"open_min\": 0.85, \"thr\": 0.405}",
+   0
+  ],
+  "clc_stats": [
+   "val",
+   "{}",
+   0
+  ]
+ },
+ "handover_block": {
+  "v2": [
+   "StagePlanV2Head",
+   "777616330fd69aae",
+   2936336
+  ],
+  "sc": [
+   "Scorer",
+   "030984a55345bc4c",
+   421504
+  ],
+  "psc": [
+   "Scorer",
+   "3fdbb7e25f931e71",
+   421504
+  ],
+  "ah": [
+   "AnchorHead",
+   "c64037a4c31b1ac7",
+   290691
+  ],
+  "D": [
+   "TemporalActionDecoder",
+   "d22de18f322fd9af",
+   14429194
+  ],
+  "Q": [
+   "TargetQueryExtractor",
+   "7939e66de5796a2b",
+   3691200
+  ],
+  "Vg": [
+   "VisualGroundingCrossAttention",
+   "7ed8c5efd98d9879",
+   3690240
+  ],
+  "TPH": [
+   "TargetPointHead",
+   "efd68dbcdf64df67",
+   312579
+  ],
+  "bimdec": [
+   "BimDecoder",
+   "cab7353546676935",
+   14964234
+  ],
+  "adec": [
+   "AdaptiveDecoder",
+   "cd227bb8c6cc8566",
+   15248916
+  ],
+  "PH": [
+   "ProgressHead",
+   "a48b9235c143554b",
+   1114888
+  ],
+  "head_head_camera": [
+   "Head",
+   "c503140472a18264",
+   0
+  ],
+  "head_left_camera": [
+   "Head",
+   "eb3994af4fbd5870",
+   0
+  ],
+  "head_right_camera": [
+   "Head",
+   "a20299d23d074bf5",
+   0
+  ],
+  "backbone": [
+   "pol",
+   "5e0c75cdcf67ccf6",
+   0
+  ],
+  "pm": [
+   "arr",
+   "50ababb919051356",
+   0
+  ],
+  "ps": [
+   "arr",
+   "154c651c6a685473",
+   0
+  ],
+  "dm": [
+   "arr",
+   "984f2185d5e39f7e",
+   0
+  ],
+  "dsd": [
+   "arr",
+   "a014f442ab72320c",
+   0
+  ],
+  "anchor_dec": [
+   "anchor",
+   "72dc46c99439b977True",
+   0
+  ],
+  "stats": [
+   "json",
+   "2703bd896d89637a",
+   0
+  ],
+  "bst": [
+   "json",
+   "669ffabd7a8df683",
+   0
+  ],
+  "cfg_K": [
+   "val",
+   "5",
+   0
+  ],
+  "cfg_max_retry": [
+   "val",
+   "2",
+   0
+  ],
+  "cfg_use_prog": [
+   "val",
+   "True",
+   0
+  ],
+  "cfg_maxcalls": [
+   "val",
+   "300",
+   0
+  ],
+  "cfg_clc_approach": [
+   "val",
+   "True",
+   0
+  ],
+  "cfg_clc_fb": [
+   "val",
+   "False",
+   0
+  ],
+  "cfg_clc_reverify": [
+   "val",
+   "False",
+   0
+  ],
+  "cfg_newg": [
+   "val",
+   "True",
+   0
+  ],
+  "cfg_anch_max": [
+   "val",
+   "0.015",
+   0
+  ],
+  "cfg_ref_tol": [
+   "val",
+   "0.04",
+   0
+  ],
+  "cfg_tau": [
+   "val",
+   "0.8",
+   0
+  ],
+  "cfg_open_min": [
+   "val",
+   "0.85",
+   0
+  ],
+  "cfg_nview": [
+   "val",
+   "6",
+   0
+  ],
+  "cfg_maxcyc": [
+   "val",
+   "2",
+   0
+  ],
+  "cfg_post_chunks": [
+   "val",
+   "5",
+   0
+  ],
+  "cfg_defer": [
+   "val",
+   "True",
+   0
+  ],
+  "opt": [
+   "val",
+   "{\"carrychk\": true, \"conf\": true, \"fuse\": true, \"lowthr\": true, \"memgate\": true, \"pivot\": true, \"receive\": true, \"relgate\": true, \"retreat\": true, \"term\": true, \"verify\": true}",
+   0
+  ],
+  "cal": [
+   "val",
+   "{\"empty\": 0.1818, \"enabled\": true, \"hold_max\": 0.7211, \"hold_min\": 0.7179, \"open_min\": 0.85, \"thr\": 0.45}",
+   0
+  ],
+  "clc_stats": [
+   "val",
+   "{}",
+   0
+  ]
+ }
+}

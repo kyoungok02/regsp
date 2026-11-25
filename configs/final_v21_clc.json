@@ -1,0 +1,57 @@
+{
+ "name": "V21-CLC (frozen freeze4)",
+ "source_protocol": "freeze4/PROTOCOL4.json (research tree commit ddc8b50d)",
+ "frozen_utc": "2026-11-17T05:22:57Z",
+ "common_env": {
+  "ACL_K": 5,
+  "ACL_RETRY": 2,
+  "ACL_PROG": 1
+ },
+ "tasks": {
+  "click_bell": {
+   "bimanual": false,
+   "nview": 3,
+   "env": {},
+   "note": "regression control: frozen freeze3 configuration, all CLC options off"
+  },
+  "place_container_plate": {
+   "bimanual": false,
+   "nview": 3,
+   "env": {
+    "CLC_APPROACH": 2,
+    "CLC_FB": 1,
+    "CLC_REVERIFY": 1,
+    "ACL_NEWG": 1,
+    "ACL_FUSE": 0
+   }
+  },
+  "stack_blocks_two": {
+   "bimanual": true,
+   "nview": 6,
+   "env": {},
+   "note": "regression control: frozen freeze3 configuration (stage-conditioned subgoal scorer + instruction-conditioned progress head)"
+  },
+  "handover_block": {
+   "bimanual": true,
+   "nview": 6,
+   "env": {
+    "CLC_APPROACH": 2,
+    "ACL_ANCHOR_MAX_CM": 1.5,
+    "ACL_REF_RAY_CM": 4
+   }
+  }
+ },
+ "evaluation_protocol": {
+  "clean_seed_start": 8200000,
+  "randomized_seed_start": 8700000,
+  "episodes_per_cell": 20,
+  "configs": {
+   "clean": "demo_clean",
+   "randomized": "demo_randomized"
+  },
+  "instruction_type": "seen",
+  "seed_timeout_s": 1500,
+  "max_seed_tries": 100,
+  "expert_screening": "seeds on which the scripted expert fails are skipped (validity screening only; the policy never sees expert state)"
+ }
+}

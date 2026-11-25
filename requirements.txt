@@ -1,0 +1,19 @@
+# Versions of the environment in which ReGSP was verified (see docs/INSTALL.md). CUDA 12.8 build of PyTorch.
+torch==2.7.1
+torchvision==0.22.1
+transformers==5.22.2
+numpy==1.26.4
+scipy==1.17.1
+opencv-python-headless==4.13.0.92
+transforms3d==0.4.2
+PyYAML==6.0.3
+safetensors==0.8.0
+huggingface-hub==1.33.0
+einops==0.8.2
+draccus==0.11.6
+num2words==0.5.14
+pillow==12.3.0
+pytest>=8
+# Install separately, without dependencies (it pins numpy>=2, which conflicts with SAPIEN 3.0.0b1):
+#   pip install --no-deps lerobot==0.7.0
+# Simulator (not on PyPI as a package set; see docs/INSTALL.md): RoboTwin commit 0aeea2d669c0f8516f4d5785f0aa33ba812c14b4 with sapien==3.0.0b1, mplib==0.2.1, its bundled cuRobo, pytorch3d==0.7.8

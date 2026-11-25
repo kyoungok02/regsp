@@ -1,0 +1,17 @@
+task,config,setting,episodes,success,first_grasp_n,first_grasp_held,held_given_ground<=1.5cm,ground_xy_median_cm,target_disp_before_close_median_cm,disp>1cm,align_xy_at_close_median_cm,align<=1.5cm,stage1_first_n,stage1_first_held,retries_per_ep,verify_verdicts,episodes_with_verified_retry,success_after_verified_retry,"first_source(n,success)",calls_per_ep,wall_s_per_ep
+handover_block,rand,freeze3,60,19,60,27,21/23,2.12,0.91,30,4.81,23,31,20,1.45,{},0,0,"{""grounded"": [47, 17], ""coarse_fallback"": [13, 2]}",46.4,12.7
+handover_block,rand,selected(CLC_APPROACH=2),60,32,60,33,26/26,1.75,0.14,21,1.92,27,38,31,1.05,{},0,0,"{""grounded"": [47, 28], ""coarse_fallback"": [13, 4]}",48.9,12.7
+handover_block,rand,rejected(+CLC_NEAR),60,31,60,36,31/35,1.15,0.0,21,1.57,29,44,35,1.07,{},0,0,"{""grounded"": [40, 21], ""coarse_fallback"": [20, 10]}",56.9,14.6
+handover_block,clean,freeze3,60,37,60,43,40/50,0.71,0.0,16,0.98,45,44,39,0.72,{},0,0,"{""grounded"": [58, 36], ""coarse_fallback"": [2, 1]}",38.1,8.4
+handover_block,clean,selected(CLC_APPROACH=2),60,53,60,54,49/51,0.8,0.0,8,0.81,51,55,54,0.25,{},0,0,"{""grounded"": [58, 52], ""coarse_fallback"": [2, 1]}",39.0,8.4
+handover_block,clean,rejected(+CLC_NEAR),60,50,60,50,46/47,0.62,0.0,11,0.62,48,52,52,0.33,{},0,0,"{""grounded"": [58, 48], ""coarse_fallback"": [2, 2]}",43.4,9.6
+place_container_plate,rand,freeze3,60,23,60,NA,NA,NA,0.0,3,NA,NA,NA,NA,0.0,{},0,0,"{""v2_fallback"": [33, 9], ""grounded"": [25, 13], ""v2_fallback_no_proposals"": [2, 1]}",18.2,4.8
+place_container_plate,rand,selected(pcp3),60,38,60,NA,NA,NA,0.0,1,NA,NA,NA,NA,0.37,"{""not_carried"": 22, ""no_confident_referent"": 17, ""None"": 1, ""carried"": 1}",16,7,"{""grounded"": [26, 23], ""coarse_offset_fallback"": [24, 12], ""v2_fallback_no_proposals"": [1, 1], ""v2_fallback"": [9, 2]}",33.2,7.2
+place_container_plate,rand,verify_only(pcpV),60,32,60,NA,NA,NA,0.0,2,NA,NA,NA,NA,0.27,"{""no_confident_referent"": 24, ""not_carried"": 16, ""carried"": 1}",12,6,"{""v2_fallback"": [34, 12], ""grounded"": [24, 19], ""v2_fallback_no_proposals"": [2, 1]}",27.7,6.4
+place_container_plate,clean,freeze3,60,46,60,NA,NA,NA,0.0,4,NA,NA,NA,NA,0.0,{},0,0,"{""v2_fallback"": [19, 11], ""grounded"": [40, 34], ""v2_fallback_no_proposals"": [1, 1]}",16.9,3.5
+place_container_plate,clean,selected(pcp3),60,45,60,NA,NA,NA,0.0,5,NA,NA,NA,NA,0.05,"{""no_confident_referent"": 14, ""carried"": 1, ""not_carried"": 3}",3,2,"{""coarse_offset_fallback"": [10, 8], ""grounded"": [34, 27], ""v2_fallback"": [16, 10]}",20.8,4.1
+place_container_plate,clean,verify_only(pcpV),60,50,60,NA,NA,NA,0.0,3,NA,NA,NA,NA,0.03,"{""not_carried"": 2, ""no_confident_referent"": 10}",2,2,"{""v2_fallback"": [22, 17], ""grounded"": [38, 33]}",19.8,4.0
+stack_blocks_two,rand,freeze3(kept),60,37,60,54,50/51,0.77,0.0,4,0.77,51,58,44,0.88,{},0,0,"{""grounded"": [45, 31], ""coarse_fallback"": [15, 6]}",57.7,13.5
+stack_blocks_two,rand,not_adopted(CLC_APPROACH=2),60,45,60,58,55/55,0.56,0.0,1,0.56,55,58,50,0.43,{},0,0,"{""grounded"": [49, 39], ""coarse_fallback"": [11, 6]}",53.5,12.0
+stack_blocks_two,clean,freeze3(kept),60,55,60,59,59/60,0.45,0.0,1,0.45,59,59,55,0.3,{},0,0,"{""grounded"": [48, 44], ""coarse_fallback"": [12, 11]}",44.4,8.7
+stack_blocks_two,clean,not_adopted(CLC_APPROACH=2),60,55,60,60,60/60,0.5,0.0,0,0.5,60,60,56,0.38,{},0,0,"{""grounded"": [48, 44], ""coarse_fallback"": [12, 11]}",50.9,9.6

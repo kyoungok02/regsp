@@ -1,0 +1,8 @@
+Sources (all under <research-tree>/robotwin_v21_4task_counterfactual/):
+1. PIC_LANGUAGE_DEPENDENCE.csv  -> panels C, D. Rows: group "FINAL3 fresh seeds, PIC" and "FINAL3 fresh seeds, previous frozen model", task stack_blocks_two, config clean/rand; standard success = native_success of the "orig" rows; counterfactual-goal completion = goal_red_on_green of the "counterfactual (roles exchanged)" rows; n = 20.
+2. COUNTERFACTUAL_REFERENT_REPORT.md (table; rows click_bell/stack_blocks_two, mode base v1, cf v1, cf u1) -> panel B: orig val acc, CF val acc, CF swap both correct, orig/CF val n.
+3. eval/final3_pic, eval/final3_prev, eval/final3_pic_cf, eval/final3_prev_cf (seed*.json file names) -> same-seed check, written to figures_supp/seed_check.json (cf cells identical for both models; stack Clean standard-success cells not identical).
+4. scripts/pic_rt_policy.py (cf_instruction, lines 56-59) and scripts/pic_make_reports.py (definition of goal_red_on_green) -> definition of the role exchange and of the metric (no numbers).
+Provenance of the numbers behind (1): PIC_FINAL_REPORT.md section 2 (same CSV); freeze3/PROTOCOL3.json (seeds 8100000+/8600000+).
+Not used: audit/lang_probe_offline.json (blank/shuffled probes of the earlier frozen scorers on original frames; different scorers and metric than panel B), audit/cf_bell_montage.png (click_bell only).
+Wilson 95% intervals are computed in the script from the plotted counts.

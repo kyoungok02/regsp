@@ -1,0 +1,22 @@
+{
+ "place_container_plate": {
+  "grasp_minus_coarse": {
+   "L": [
+    0.0027,
+    0.048,
+    0.0632
+   ],
+   "R": [
+    -0.0013,
+    -0.0493,
+    0.0684
+   ]
+  },
+  "n_seeds": {
+   "L": 48,
+   "R": 37
+  },
+  "seed_range": "training-domain rollouts < 7000000 (5300000+/5350000+ blocks)",
+  "definition": "median of (two-view grounded grasp point - head-ray x height-prior estimate of the referent), robot frame, metres"
+ }
+}

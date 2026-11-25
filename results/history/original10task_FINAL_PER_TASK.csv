@@ -1,0 +1,11 @@
+task,clean,randomized,total,infra_failures
+handover_block,0/10,0/10,0/20,0
+stack_blocks_two,6/10,0/10,6/20,0
+place_dual_shoes,0/10,0/10,0/20,0
+place_object_basket,2/10,0/10,2/20,0
+place_bread_basket,2/10,1/10,3/20,0
+beat_block_hammer,3/10,1/10,4/20,0
+click_bell,9/10,1/10,10/20,0
+place_container_plate,7/10,0/10,7/20,0
+open_laptop,3/10,1/10,4/20,0
+shake_bottle,4/10,2/10,6/20,0

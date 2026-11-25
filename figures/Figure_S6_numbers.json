@@ -1,0 +1,48 @@
+{
+ "n_matched_episodes": {
+  "D_rand": 19,
+  "D_clean": 19,
+  "E_rand": 19,
+  "E_clean": 20,
+  "F_rand": 18,
+  "F_clean": 19
+ },
+ "traj_episodes": {
+  "orig": 114,
+  "corr": 114
+ },
+ "grasp_rows": {
+  "orig": 114,
+  "corr": 114
+ },
+ "dev_success": {
+  "orig_rand": [
+   17,
+   56
+  ],
+  "orig_clean": [
+   36,
+   58
+  ],
+  "corr_rand": [
+   29,
+   56
+  ],
+  "corr_clean": [
+   51,
+   58
+  ]
+ },
+ "first_grasp_held": {
+  "orig": 67,
+  "corr": 82
+ },
+ "median_lateral_at_sample39_cm": {
+  "orig": 0.002445163426916982,
+  "corr": 0.002370314111688616
+ },
+ "median_lateral_at_sample29_cm": {
+  "orig": 3.996615080373539,
+  "corr": 0.005079763009881765
+ }
+}

@@ -1,0 +1,215 @@
+{
+ "note": "Canonical bundle file -> SHA-256 and provenance. 'research_tree' paths are relative to the Machine-D research output directories (outputs/robotwin_v21_4task_counterfactual and outputs/robotwin_safediff_original_10task). Weights are not stored in git.",
+ "backbone": {
+  "checkpoint": "safediff_vla_grounded_grasp_v2_20k/checkpoints/020000/pretrained_model/model.safetensors",
+  "sha256": "b8cc22a667ea4abd8e0b1091722e981f3137bf840c16dee7823df40bbb1eb509"
+ },
+ "tasks": {
+  "click_bell": {
+   "stageplan_head.pt": {
+    "component": "stageplan_head",
+    "sha256": "e009efa36bc826935f0df2629fb6871c5dfc34297b317595357c5770fe5b166e",
+    "bytes": 11766777,
+    "research_tree": "v21_4task_counterfactual/ckpt_sp/click_bell/v2head.pt"
+   },
+   "decoder.pt": {
+    "component": "decoder",
+    "sha256": "2431fc90c5ca612452d247c647a2c5d1d186f1465bbeef5ea1a88c5aa174502c",
+    "bytes": 88636365,
+    "research_tree": "v21_4task_counterfactual/ckpt_sp/click_bell/decoder_pretrained.pt"
+   },
+   "anchor_head.pt": {
+    "component": "anchor_head",
+    "sha256": "7092ad33a765db8be49fb7d300b1d88b0f2c568feabac6536756e444c5f42ab1",
+    "bytes": 1169205,
+    "research_tree": "v21_4task_counterfactual/ckpt_full/click_bell/v21_anchor.pt"
+   },
+   "proposal_head_camera.pt": {
+    "component": "proposal_head_camera",
+    "sha256": "677d96a8f305ec5bd471643bab633d12d537fc987d9f7124278af396488d9401",
+    "bytes": 4398075,
+    "research_tree": "v21_4task_counterfactual/ckpt_da/click_bell/v21_prop_head_camera_obs.pt"
+   },
+   "proposal_left_camera.pt": {
+    "component": "proposal_left_camera",
+    "sha256": "01b99efc66972036dabbc57620fa3fc07562b3643428383b40828f571a2ec554",
+    "bytes": 4398075,
+    "research_tree": "v21_4task_counterfactual/ckpt_da/click_bell/v21_prop_left_camera_obs.pt"
+   },
+   "proposal_right_camera.pt": {
+    "component": "proposal_right_camera",
+    "sha256": "6b085a4dd87c6b6c474d4fa0da0d60b79c190b724e92792e1e5409d894fc8373",
+    "bytes": 4398089,
+    "research_tree": "v21_4task_counterfactual/ckpt_da/click_bell/v21_prop_right_camera_obs.pt"
+   },
+   "referent_scorer.pt": {
+    "component": "referent_scorer",
+    "sha256": "a8cbda6eaa8c41abf268afec2b657df96525dd8e0a1ad33548e84556935779f7",
+    "bytes": 1693483,
+    "research_tree": "v21_4task_counterfactual/ckpt_cf/click_bell/scorer_cf_u1.pt"
+   }
+  },
+  "place_container_plate": {
+   "stageplan_head.pt": {
+    "component": "stageplan_head",
+    "sha256": "2c3156f57e2eb701b89e56c9519dd041d9e402ae6b03142bf08c7690030b920f",
+    "bytes": 11766841,
+    "research_tree": "v21_4task_counterfactual/ckpt_sp/place_container_plate/v2head.pt"
+   },
+   "decoder.pt": {
+    "component": "decoder",
+    "sha256": "ce99d92177827369d853f2a68d132ebc340045b898c101b858b4c251d0346d57",
+    "bytes": 88636365,
+    "research_tree": "v21_4task_counterfactual/ckpt_sp/place_container_plate/decoder_pretrained.pt"
+   },
+   "anchor_head.pt": {
+    "component": "anchor_head",
+    "sha256": "7e808d9df3f4b06638260d93e93fa058cdcb7bfbc6e68d52adff7c29bab3c3db",
+    "bytes": 1169205,
+    "research_tree": "v21_4task_counterfactual/ckpt_full/place_container_plate/v21_anchor.pt"
+   },
+   "proposal_head_camera.pt": {
+    "component": "proposal_head_camera",
+    "sha256": "9f82e3ea3f7b5ba8021dcb75c269e751419bb260b1156a92419fb19ce7f28323",
+    "bytes": 4398075,
+    "research_tree": "v21_4task_counterfactual/ckpt_da/place_container_plate/v21_prop_head_camera_obs.pt"
+   },
+   "proposal_left_camera.pt": {
+    "component": "proposal_left_camera",
+    "sha256": "96a2d9ab20fabb7688100cf748af62befff87c96ed51b82bfc7ef8278c7365a9",
+    "bytes": 4398075,
+    "research_tree": "v21_4task_counterfactual/ckpt_da/place_container_plate/v21_prop_left_camera_obs.pt"
+   },
+   "proposal_right_camera.pt": {
+    "component": "proposal_right_camera",
+    "sha256": "56484994ba432357cce7883946c3c0c8bcb734593fae3106b85c53fe5e1c2369",
+    "bytes": 4398089,
+    "research_tree": "v21_4task_counterfactual/ckpt_da/place_container_plate/v21_prop_right_camera_obs.pt"
+   },
+   "referent_scorer.pt": {
+    "component": "referent_scorer",
+    "sha256": "79bcf14f118c58dde8812332e18272750cc4f8fe5702274704b91490512b1fd9",
+    "bytes": 1693537,
+    "research_tree": "v21_4task_counterfactual/ckpt_cf/place_container_plate/scorer_base_u1.pt"
+   }
+  },
+  "stack_blocks_two": {
+   "stageplan_head.pt": {
+    "component": "stageplan_head",
+    "sha256": "6bdb3fed2f143c802f5f1896b3164f4e5cced8d335c5c39eebed2910a2b32049",
+    "bytes": 11766841,
+    "research_tree": "v21_4task_counterfactual/exp2_sp/stack_blocks_two/v2head.pt"
+   },
+   "decoder.pt": {
+    "component": "decoder",
+    "sha256": "af614f7605d254d8db657b26a1164d360dbed68b6675d11172fe1a9ef17f54c2",
+    "bytes": 88636365,
+    "research_tree": "v21_4task_counterfactual/exp2_sp/stack_blocks_two/decoder_pretrained.pt"
+   },
+   "anchor_head.pt": {
+    "component": "anchor_head",
+    "sha256": "410c67e9996d8520b5ecb487f22e5deeeba518a9b5c93bdf8942da82914145f6",
+    "bytes": 1169205,
+    "research_tree": "v21_4task_counterfactual/ckpt_full/stack_blocks_two/v21_anchor.pt"
+   },
+   "proposal_head_camera.pt": {
+    "component": "proposal_head_camera",
+    "sha256": "c3b0f17b875351ea1526e803c1fb55d490072269db3abc2127bdd2e635503df2",
+    "bytes": 4398075,
+    "research_tree": "v21_4task_counterfactual/ckpt_da/stack_blocks_two/v21_prop_head_camera_obs.pt"
+   },
+   "proposal_left_camera.pt": {
+    "component": "proposal_left_camera",
+    "sha256": "f3d0054e4fb6a585b4e114eb1421daaf1103b47f404a9d61d3747f2b3e396194",
+    "bytes": 4398075,
+    "research_tree": "v21_4task_counterfactual/ckpt_da/stack_blocks_two/v21_prop_left_camera_obs.pt"
+   },
+   "proposal_right_camera.pt": {
+    "component": "proposal_right_camera",
+    "sha256": "1468ddd96393d2a131b0ceb66cacf1b8a151ad2879da914d15b8c9f6d1475135",
+    "bytes": 4398089,
+    "research_tree": "v21_4task_counterfactual/ckpt_da/stack_blocks_two/v21_prop_right_camera_obs.pt"
+   },
+   "subgoal_scorer.pt": {
+    "component": "subgoal_scorer",
+    "sha256": "e205f583ece2d0d85536113663d373b3d6c9c7f6b9a66e354da332647aad319f",
+    "bytes": 1696053,
+    "research_tree": "v21_4task_counterfactual/ckpt_pic/stack_blocks_two/subgoal_s2.pt"
+   },
+   "bim_decoder.pt": {
+    "component": "bim_decoder",
+    "sha256": "bd7222c1fcb6c03ff0bab521dffc4cbd6d9c460f2c3069f7fc870c7a2c8d666b",
+    "bytes": 90780466,
+    "research_tree": "v21_4task_counterfactual/exp2_sp/stack_blocks_two/bim_decoder_b1.pt"
+   },
+   "progress.pt": {
+    "component": "progress",
+    "sha256": "575a0ee72c28bbc8befc7aa615bfafcc54417f7bee28b409e4d04d8b4584cf35",
+    "bytes": 99746832,
+    "research_tree": "v21_4task_counterfactual/ckpt_pic/stack_blocks_two/acl_p2.pt"
+   }
+  },
+  "handover_block": {
+   "stageplan_head.pt": {
+    "component": "stageplan_head",
+    "sha256": "895ae0575e54334ad942068e16bfc326b120ca140c1d88457e75603d4b5adf5a",
+    "bytes": 11766777,
+    "research_tree": "v21_4task_counterfactual/exp2_sp/handover_block/v2head.pt"
+   },
+   "decoder.pt": {
+    "component": "decoder",
+    "sha256": "9712208358389dce16a64e6ca8534cdf33b1aee2c4e3b591534981eaabfec4cb",
+    "bytes": 88636365,
+    "research_tree": "v21_4task_counterfactual/exp2_sp/handover_block/decoder_pretrained.pt"
+   },
+   "anchor_head.pt": {
+    "component": "anchor_head",
+    "sha256": "adfeaa3609f0a0ded374885c9edb2e5e16703644f80897c63d1cc04c94761733",
+    "bytes": 1169205,
+    "research_tree": "v21_4task_counterfactual/ckpt_full/handover_block/v21_anchor.pt"
+   },
+   "proposal_head_camera.pt": {
+    "component": "proposal_head_camera",
+    "sha256": "e85aeff2fb3ba4bcf8270635712a51a60ed05a010568f20d1a4fb405cbb2b931",
+    "bytes": 4398089,
+    "research_tree": "v21_4task_counterfactual/ckpt_da/handover_block/v21_prop_head_camera_obs2.pt"
+   },
+   "proposal_left_camera.pt": {
+    "component": "proposal_left_camera",
+    "sha256": "e3393097145bf1497fb96469d892a88a2b7b36bc82b6c2d0130be7260757d5c8",
+    "bytes": 4398089,
+    "research_tree": "v21_4task_counterfactual/ckpt_da/handover_block/v21_prop_left_camera_obs2.pt"
+   },
+   "proposal_right_camera.pt": {
+    "component": "proposal_right_camera",
+    "sha256": "e7fc43c10e341107c07df9549b50acb72ffc6f11f8364132ac73d45ec1e535c4",
+    "bytes": 4398103,
+    "research_tree": "v21_4task_counterfactual/ckpt_da/handover_block/v21_prop_right_camera_obs2.pt"
+   },
+   "referent_scorer.pt": {
+    "component": "referent_scorer",
+    "sha256": "91642493be1070cbed72b3f1c644fc6d6a7acb7fabdbde6b885a70662fbadb88",
+    "bytes": 1693537,
+    "research_tree": "v21_4task_counterfactual/ckpt_cf/handover_block/scorer_base_u1.pt"
+   },
+   "bim_decoder.pt": {
+    "component": "bim_decoder",
+    "sha256": "fa5371afacf191e72eb58b24d8acbdd0b3187525203bbaa4ef65b66a5f9d64e1",
+    "bytes": 90780466,
+    "research_tree": "v21_4task_counterfactual/exp2_sp/handover_block/bim_decoder_b1.pt"
+   },
+   "progress.pt": {
+    "component": "progress",
+    "sha256": "94ba11b5e07d4f5808dc5f57c7fb4e33a7aa39f1bff88d71d4ac989e3f000981",
+    "bytes": 96383165,
+    "research_tree": "v21_4task_counterfactual/ckpt_acl/handover_block/acl_a2.pt"
+   },
+   "place_scorer.pt": {
+    "component": "place_scorer",
+    "sha256": "ea9a5693e3d699a65e3d7f784c14098b023571e6e9710efd495852fa3a234885",
+    "bytes": 1693699,
+    "research_tree": "original_10task/ckpt_bim/handover_block/v21b_scorer_place_b1.pt"
+   }
+  }
+ }
+}

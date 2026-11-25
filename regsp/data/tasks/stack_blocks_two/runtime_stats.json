@@ -1,0 +1,30 @@
+{
+ "task": "stack_blocks_two",
+ "arm_selector": {
+  "w": [
+   0.2077881427646194,
+   -24.358515033885073,
+   0.6984521495584762,
+   -0.6550457289077405
+  ],
+  "b": -0.2035657472342469,
+  "n": 150,
+  "use_other_object_feature": false,
+  "val_acc_holdout": 1.0,
+  "val_acc_referent_only": 1.0,
+  "val_acc_with_other": 1.0,
+  "majority_baseline": 0.5
+ },
+ "referent_height_world": {
+  "0": 0.7650007605552673,
+  "1": 0.7650007605552673
+ },
+ "max_cycles": 2,
+ "max_post_chunks": 4,
+ "defer_release": false,
+ "defer_fraction": 0.0,
+ "cycles_per_episode_p50_p95": [
+  2.0,
+  2.0
+ ]
+}

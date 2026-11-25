@@ -1,0 +1,10 @@
+Sources (all under <research-tree>/robotwin_v21_4task_counterfactual/). Figure built by figures_supp/make_figure_S6_pregrasp_trajectory.py; derived numbers in figures_supp/Figure_S6_numbers.json.
+DEVELOPMENT runs (ACL_TRACE=1 traces; per-call measured TCP, commanded poses, g_final, StagePlan variables, privileged object poses used for analysis panels only), task handover_block, Clean and Randomized:
+  original executor (freeze3 behaviour, no CLC options): eval/clc_diag (block D, seeds 7200300+/7500300+), eval/clcE_base (block E, 7200400+/7500400+), eval/clcF_base (block F, 7200500+/7500500+)  -> {clean,rand}/handover_block/seed*.json
+  corrected executor (CLC_APPROACH=2): eval/clc_ap2 (D), eval/clcE_ap2 (E), eval/clcF_ap2 (F)  -> {clean,rand}/handover_block/seed*.json ; run settings in env.txt of each directory
+  Only seeds present in both the original and the corrected run of the same block/domain are used (114 of 120 per executor).
+FROZEN FINAL (panel C hatched bars only; fresh seeds Clean 8200000+, Randomized 8700000+, previous frozen configuration vs CLC): CLC_FINAL_RESULTS.csv (rows task=handover_block; columns prev_success, prev_n, clc_success, n); underlying episodes eval/final4_prev, eval/final4_clc.
+Loader / definitions: scripts/analysis/clc_diag.py (load(): grounding error = g_final minus object centre at cycle start; hold = grasp_verify.holding).
+Mechanism (no numbers): src<repo>/policies/safediff_vla/stageplan_v2.py build_pregrasp_chunk (50 samples: 20 to waypoint, 15 to standoff = sample 34, 15 to grasp point); scripts/pic_rt_policy.py (original sampling of samples 9,19,29,39,49) and scripts/clc_rt_policy.py (CLC_APPROACH=2: samples 9,19,29,34,39,44,49 with lead-in and standoff check); freeze4/PROTOCOL4.json.
+Omitted: stack_blocks_two (CLC_APPROACH=2 was not adopted for that task and its saved data do not isolate the approach effect). No panel was estimated from missing data.
+Intended standoff in the original panels is reconstructed from logged cycle.v2.pre_dist and cycle.v2.approach (original traces do not log the unvisited sample-34 pose); in the corrected panels it is the commanded sample-34 pose from the trace.

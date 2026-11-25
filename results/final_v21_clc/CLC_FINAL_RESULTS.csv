@@ -1,0 +1,9 @@
+task,config,n,clc_success,clc_rate_%,clc_wilson95,prev_n,prev_success,prev_rate_%,seeds_identical,n_common_seeds,both_success,only_clc,only_prev,clc_infra_failures,prev_infra_failures,clc_calls_per_ep,prev_calls_per_ep,clc_wall_s_per_ep,prev_wall_s_per_ep,clc_retries_per_ep,prev_retries_per_ep,clc_episodes_with_verified_retry,clc_success_after_verified_retry,clc_first_grasp_held,prev_first_grasp_held,config_changed_vs_prev
+click_bell,clean,20,20,100.0,"(83.9, 100.0)",20,20,100.0,True,20,20,0,0,0,0,10.3,10.3,2.3,2.3,0.0,0.0,0,0,NA,NA,False
+click_bell,rand,20,19,95.0,"(76.4, 99.1)",20,19,95.0,True,20,18,1,1,0,0,11.4,11.2,3.7,3.6,0.0,0.0,0,0,NA,NA,False
+place_container_plate,clean,20,18,90.0,"(69.9, 97.2)",20,17,85.0,True,20,15,3,2,0,0,22.2,15.9,4.4,3.4,0.1,0.0,2,2,NA,NA,True
+place_container_plate,rand,20,14,70.0,"(48.1, 85.5)",20,8,40.0,True,20,8,6,0,0,0,29.3,19.1,7.0,4.9,0.4,0.0,7,3,NA,NA,True
+stack_blocks_two,clean,20,18,90.0,"(69.9, 97.2)",20,17,85.0,True,20,16,2,1,0,0,45.4,46.1,8.9,9.0,0.3,0.4,0,0,20,20,False
+stack_blocks_two,rand,20,13,65.0,"(43.3, 81.9)",20,15,75.0,True,20,10,3,5,0,0,52.5,47.4,12.2,11.4,0.7,0.4,0,0,17,19,False
+handover_block,clean,20,15,75.0,"(53.1, 88.8)",20,14,70.0,True,20,12,3,2,0,0,40.6,40.0,9.1,9.5,0.5,0.6,0,0,16,17,True
+handover_block,rand,20,9,45.0,"(25.8, 65.8)",20,6,30.0,False,19,5,3,1,0,0,54.6,43.6,14.5,12.3,1.4,1.4,0,0,9,10,True

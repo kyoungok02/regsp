@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "regsp"
+version = "0.1.0"
+description = "ReGSP: re-grounded StagePlan execution with counterfactual referent grounding for language-conditioned single-arm and bimanual manipulation (RoboTwin)"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Apache-2.0" }
+# NOTE: `lerobot==0.7.0` is intentionally NOT listed: it pins numpy>=2, whereas the tested RoboTwin/SAPIEN environment needs numpy<2.
+# Install it with `pip install --no-deps lerobot==0.7.0` (docs/INSTALL.md).
+dependencies = [
+  "torch>=2.7,<2.8",
+  "torchvision>=0.22,<0.23",
+  "transformers==5.22.2",
+  "numpy>=1.26,<2",
+  "scipy>=1.13",
+  "opencv-python-headless>=4.9",
+  "transforms3d==0.4.2",
+  "pyyaml>=6",
+  "safetensors>=0.4.3",
+  "huggingface-hub>=1.31",
+  "einops>=0.8",
+  "draccus>=0.11.6,<0.12",
+  "num2words",
+  "pillow",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+include = ["regsp*"]
+
+[tool.setuptools.package-data]
+regsp = ["data/*.json", "data/tasks/*/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
