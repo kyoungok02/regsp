@@ -147,6 +147,7 @@ python scripts/utils/verify_bundle_load.py
 
 Protocol (`configs/final_v21_clc.json`): seed slots start at the stated seed; a seed is *valid* only if RoboTwin's scripted expert solves the scene (used solely as a validity screen; the policy never sees expert or simulator object state); invalid seeds are skipped; success is the simulator's own `eval_success`; per-seed timeout 1500 s; at most 3 infrastructure attempts per seed. Randomized = RoboTwin `demo_randomized`. Instructions: `seen` type.
 
+<!--
 ## Experimental results
 
 **Released version: V21-CLC** (closed-loop grounding-to-action correction on top of the persistent-instruction model), frozen before any final episode (`results/final_v21_clc/freeze_protocol.json`). Source: per-episode records of the frozen final run, re-aggregated here (`results/final_v21_clc/episodes_regsp.csv`, `summary_regsp.csv`); they reproduce `CLC_FINAL_RESULTS.csv` exactly.
@@ -224,6 +225,8 @@ The plotting scripts are in `figures/src/` (they read the research-tree outputs;
 * **Runtime nondeterminism** (simulator; infrastructure restarts) and the expert-validity screen (seed slots that the scripted expert fails are skipped, so the set of evaluated scenes depends on RoboTwin's expert).
 * **Privileged simulator state** is used only for training-time labels, offline diagnostics and some figures, never as a policy input at inference.
 * **Fork independence**: the vendored backbone code and `lerobot==0.7.0` were verified weight-identical to the research fork for loading; backbone *training* through `lerobot-train` was not verified outside the fork.
+-->
+
 
 ## Citation
 
