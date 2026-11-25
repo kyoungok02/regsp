@@ -41,32 +41,8 @@ The exact tagging of each class as original/embodiment/extension is in the modul
 <!--
 ## Architecture
 
-```mermaid
-flowchart TD
-    O["3 RGB cameras + proprioception + instruction"] --> B["Frozen SmolVLA-based backbone<br/>(image / text / state tokens)"]
-    B --> P["Proposal heads 64x64<br/>per camera (class-agnostic)"]
-    P --> S["Referent scorer<br/>(counterfactual-trained;<br/>cycle / stage-conditioned)"]
-    S --> C["Coarse 3-D = head ray x height prior"]
-    C --> A["Arm selector"]
-    B --> SP["StagePlan head<br/>rotation, approach, pre-dist, waypoint"]
-    A --> V["Active-view acquisition<br/>wrist camera on the coarse point"]
-    V --> T["Two-view association + triangulation (<= 3 cm)"]
-    T --> AH["AnchorHead offset"]
-    AH --> G["grasp_xyz"]
-    G --> PG["Pre-grasp chunk<br/>waypoint -> standoff -> grasp<br/>(aligned approach, standoff check)"]
-    SP --> PG
-    PG --> CL["Close + verify<br/>measured finger opening / progress head"]
-    CL -- "miss / lost" --> V
-    CL --> D["Adaptive TemporalActionDecoder<br/>7-D (single) / 14-D (bimanual) chunks<br/>arm mode, stage, history, place target"]
-    D --> R["Release gate + placement verification<br/>(bounded retry)"]
-    R -- "retry" --> V
-    R --> N["Next stage / done"]
-```
-
 One *stage* is one grasp-to-release cycle of one arm. `stack_blocks_two` and `handover_block` run two stages (up to two arms at once); `click_bell` and `place_container_plate` run one. Per-stage flow, memory gates and the retry budget (`ACL_RETRY = 2`, decoder call budget 300) are described in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 -->
-
-
 ## Key components
 
 | Component | Code | Role |
