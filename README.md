@@ -38,7 +38,7 @@ The exact tagging of each class as original/embodiment/extension is in the modul
 **What this is not.** Original SafeDiff-VLA checkpoints are not available on the development machine. The frozen backbone used here is a *reconstruction*: a fresh-initialised grounded-grasp-v2 decoder trained for 20k steps on `lerobot/vlabench_unified` on top of the public frozen `lerobot/smolvla_vlabench` backbone. All task heads are retrained on RoboTwin. The results below are therefore results of this RoboTwin adaptation, not an exact reproduction of any original checkpoint.
 
 
-<!--
+
 ## Architecture
 
 ```mermaid
@@ -83,8 +83,6 @@ One *stage* is one grasp-to-release cycle of one arm. `stack_blocks_two` and `ha
 
 **Interfaces.** End-effector commands are 16-D (`[xyz(3), quat wxyz(4), gripper(1)] x [left, right]`); the decoder emits 10-D encoded chunks (xyz, sin/cos of 3 Euler angles, gripper) that decode to 7-D per arm, concatenated in fixed [L, R] order for the 14-D bimanual chunk. **Gripper polarity: 1.0 = open, 0.0 = closed**; a decoder gripper output > 0.5 is a release proposal; the measured finger opening is normalised so that 1 = open. These conventions are covered by `tests/`.
 
--->
-
 
 ## Installation
 
@@ -104,6 +102,8 @@ export REGSP_ROBOTWIN_ROOT=$PWD/RoboTwin
 ReGSP vendors the SafeDiff-VLA policy code and must **not** be combined with the SafeDiff research fork of LeRobot (both register the `safediff_vla` policy type; importing `regsp` then raises an explicit error).
 
 Run the checkpoint-free tests: `pytest tests` (the weight-dependent tests skip themselves).
+
+
 
 ## Dataset
 
