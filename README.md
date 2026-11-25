@@ -38,7 +38,7 @@ The exact tagging of each class as original/embodiment/extension is in the modul
 **What this is not.** Original SafeDiff-VLA checkpoints are not available on the development machine. The frozen backbone used here is a *reconstruction*: a fresh-initialised grounded-grasp-v2 decoder trained for 20k steps on `lerobot/vlabench_unified` on top of the public frozen `lerobot/smolvla_vlabench` backbone. All task heads are retrained on RoboTwin. The results below are therefore results of this RoboTwin adaptation, not an exact reproduction of any original checkpoint.
 
 
-
+<!--
 ## Architecture
 
 ```mermaid
@@ -64,6 +64,8 @@ flowchart TD
 ```
 
 One *stage* is one grasp-to-release cycle of one arm. `stack_blocks_two` and `handover_block` run two stages (up to two arms at once); `click_bell` and `place_container_plate` run one. Per-stage flow, memory gates and the retry budget (`ACL_RETRY = 2`, decoder call budget 300) are described in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+-->
+
 
 ## Key components
 
